@@ -1,0 +1,29 @@
+{
+  "name": "techcamper-api",
+  "version": "1.0.0",
+  "description": "API for management of bootcamps",
+  "main": "server.js",
+  "engine": {
+    "node": ">=10.16.0",
+    "npm": ">=6.9.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "management",
+    "bootcamps",
+    "api"
+  ],
+  "author": "Jonatan Flores <jonatafloress@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
