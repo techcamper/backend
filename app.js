@@ -1,5 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const colors = require('colors');
+const connectDB = require('./services/db');
 
 const app = express();
 
@@ -8,5 +10,8 @@ dotenv.config();
 
 // Body parser
 app.use(express.json());
+
+// Connect to database
+connectDB();
 
 module.exports = app;
