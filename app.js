@@ -14,4 +14,9 @@ app.use(express.json());
 // Connect to database
 connectDB();
 
+// Dev loggin middleware
+if (process.env.NODE_ENV === 'development') {
+  app.use(require('morgan')('dev'));
+}
+
 module.exports = app;
