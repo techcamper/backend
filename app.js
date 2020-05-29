@@ -21,6 +21,9 @@ if (process.env.NODE_ENV === 'development') {
   app.use(require('morgan')('dev'));
 }
 
+// Setup modules architecture
+require('./modules')(app);
+
 // Handle aplication errors as JSON
 app.use(errorHandler);
 
