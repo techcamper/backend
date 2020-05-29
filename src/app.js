@@ -1,10 +1,16 @@
+// Setup aliases for paths require
 require('module-alias/register');
+
+// Third party packages
 const express = require('express');
 const dotenv = require('dotenv');
 const colors = require('colors');
+
+// Application packages
 const errorHandler = require('./middlewares/error');
 const connectDB = require('./services/db');
 
+// Define application variables
 const app = express();
 
 // Load env vars
