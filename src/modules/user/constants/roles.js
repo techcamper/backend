@@ -1,1 +1,1 @@
-module.exports = ['user', 'publisher'];
+module.exports = ["user", "publisher"];
